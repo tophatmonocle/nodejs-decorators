@@ -120,7 +120,7 @@ exports.MakeDecorator_retry = function(options) {
             if (options.fail) { options.fail(err,data)}
 
             setTimeout(call,options.delay)
-            options.delay = options.delaymodifier(options.delay)
+            //options.delay = options.delaymodifier(options.delay)
             options.retries -= 1
         }
         
